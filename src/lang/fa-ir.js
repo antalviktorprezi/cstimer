@@ -1,27 +1,27 @@
-var OK_LANG = 'OK';
-var CANCEL_LANG = 'Fortryd';
-var RESET_LANG = 'Nulstil';
-var ABOUT_LANG = 'Omkring';
-var ZOOM_LANG = 'Zoom';
-var BUTTON_TIME_LIST = 'List tider';
-var BUTTON_OPTIONS = 'Indstillinger';
-var BUTTON_EXPORT = 'Upload';
-var BUTTON_DONATE = 'Doner';
+var OK_LANG = 'قبول';
+var CANCEL_LANG = 'لغو';
+var RESET_LANG = 'تنطیم مجدد';
+var ABOUT_LANG = 'درباره';
+var ZOOM_LANG = 'بزرگنمایی';
+var BUTTON_TIME_LIST = 'لیست زمان ها';
+var BUTTON_OPTIONS = 'تنظیمات';
+var BUTTON_EXPORT = 'صادر کردن';
+var BUTTON_DONATE = 'اهدا کردن';
 var PROPERTY_SR = 'With session';
-var PROPERTY_USEINS = 'brug WCA inspektion';
-var PROPERTY_USEINS_STR = 'Always|Except BLD|Never';
-var PROPERTY_VOICEINS = 'stemme advarsel af WCA inspektion';
-var PROPERTY_VOICEINS_STR = 'ingen|mandlig stemme|kvindelig stemme';
+var PROPERTY_USEINS = 'استفاده از زمان بازدید WCA';
+var PROPERTY_USEINS_STR = 'همیشه|به جز با چشمان بسته|هرگز';
+var PROPERTY_VOICEINS = 'هشدار صوتی زمان بازدید WCA';
+var PROPERTY_VOICEINS_STR = 'هیچ کدام|صدای مرد|صدای زن';
 var PROPERTY_VOICEVOL = 'Voice volume';
-var PROPERTY_PHASES = 'multi-fase';
-var PROPERTY_TIMERSIZE = 'timer størrelse';
-var PROPERTY_USEMILLI = 'brug millisekunder';
-var PROPERTY_SMALLADP = 'brug lille font efter decimal punkt';
-var PROPERTY_SCRSIZE = 'blanding størrelse';
-var PROPERTY_SCRMONO = 'monospaced blanding';
-var PROPERTY_SCRLIM = 'Begræns højden af blandings området';
-var PROPERTY_SCRALIGN = 'Justering af blandings området';
-var PROPERTY_SCRALIGN_STR = 'centrum|venstre|højre';
+var PROPERTY_PHASES = 'multi-phase';
+var PROPERTY_TIMERSIZE = 'timer size';
+var PROPERTY_USEMILLI = 'use milliseconds';
+var PROPERTY_SMALLADP = 'use small font after decimal point';
+var PROPERTY_SCRSIZE = 'scramble size';
+var PROPERTY_SCRMONO = 'monospaced scramble';
+var PROPERTY_SCRLIM = 'Limit the height of scramble area';
+var PROPERTY_SCRALIGN = 'Alignment of scramble area';
+var PROPERTY_SCRALIGN_STR = 'center|left|right';
 var PROPERTY_SCRFAST = 'Using fast scramble for 4x4x4 (non-official)';
 var PROPERTY_SCRKEYM = 'Label key move(s) in scramble';
 var PROPERTY_WNDSCR = 'Scramble panel display style';
@@ -29,16 +29,16 @@ var PROPERTY_WNDSTAT = 'Statistics panel display style';
 var PROPERTY_WNDTOOL = 'Tools panel display style';
 var PROPERTY_WND_STR = 'Normal|Flat';
 var EXPORT_DATAEXPORT = 'Data Import/Export';
-var EXPORT_TOFILE = 'Export til fil';
-var EXPORT_FROMFILE = 'Import til fil';
-var EXPORT_TOSERV = 'Export til server';
-var EXPORT_FROMSERV = 'Import fra server';
+var EXPORT_TOFILE = 'Export to file';
+var EXPORT_FROMFILE = 'Import from file';
+var EXPORT_TOSERV = 'Export to server';
+var EXPORT_FROMSERV = 'Import from server';
 var EXPORT_FROMOTHER = 'Import session(s) from other timers';
-var EXPORT_USERID = 'Vær venlig og sæt din konto ind (kun alfabetisk eller nummere)';
-var EXPORT_INVID = 'Kun alfabetiks eller nummere er tilladt!';
-var EXPORT_ERROR = 'Nogle fejl opstod...';
-var EXPORT_NODATA = 'Ingen data fundet på din konto';
-var EXPORT_UPLOADED = 'Upload fuldført';
+var EXPORT_USERID = 'Please input your account (only alphabet or number)';
+var EXPORT_INVID = 'Only alphabet or number is allowed!';
+var EXPORT_ERROR = 'Some errors occurred...';
+var EXPORT_NODATA = 'No data found for your account';
+var EXPORT_UPLOADED = 'Uploaded successfully';
 var EXPORT_CODEPROMPT = 'Save this code, or type saved code to import';
 var EXPORT_ONLYOPT = 'Export/Import only Options';
 var EXPORT_ACCOUNT = 'Export Accounts';
@@ -47,52 +47,52 @@ var EXPORT_LOGINWCA = 'Login Using WCA Account';
 var EXPORT_LOGOUTCFM = 'Confirm to log out?';
 var EXPORT_LOGINAUTHED = 'Authorized<br>Fetching Data...';
 var IMPORT_FINAL_CONFIRM = 'This will override all local data! Confirm to import data?';
-var BUTTON_SCRAMBLE = 'Blanding';
-var BUTTON_TOOLS = 'Værktøj';
-var IMAGE_UNAVAILABLE = 'Utilgængelig for denne blandings type';
-var TOOLS_SELECTFUNC = 'Funktion';
-var TOOLS_CROSS = 'løs kryds';
-var TOOLS_EOLINE = 'løs EOLine';
-var TOOLS_ROUX1 = 'løs Roux S1';
+var BUTTON_SCRAMBLE = 'SCRA-<br>MBLE';
+var BUTTON_TOOLS = 'TOOLS';
+var IMAGE_UNAVAILABLE = 'Unavailable for this scramble type';
+var TOOLS_SELECTFUNC = 'Function';
+var TOOLS_CROSS = 'solve cross';
+var TOOLS_EOLINE = 'solve EOLine';
+var TOOLS_ROUX1 = 'solve Roux S1';
 var TOOLS_GIIKER = 'Giiker Cube';
-var TOOLS_IMAGE = 'tegn blanding';
-var TOOLS_STATS = 'Statistiker';
+var TOOLS_IMAGE = 'draw scramble';
+var TOOLS_STATS = 'Statistics';
 var TOOLS_HUGESTATS = 'cross-session stats';
-var TOOLS_DISTRIBUTION = 'Tidsfordeling';
-var TOOLS_TREND = 'Tidsudvikling';
+var TOOLS_DISTRIBUTION = 'time distribution';
+var TOOLS_TREND = 'time trend';
 var TOOLS_METRONOME = 'metronome';
 var TOOLS_CFMTIME = 'Confirm time';
-var PROPERTY_IMGSIZE = 'Blandings billed størrelse';
-var TIMER_INSPECT = 'Inspektion';
-var TIMER_SOLVE = 'Løs';
-var PROPERTY_USEMOUSE = 'Brug musetimer';
-var PROPERTY_TIMEU = 'Timer opdatering er';
-var PROPERTY_TIMEU_STR = 'Opdatering|0.1s|sekunder|inspektion|ingen';
-var PROPERTY_PRETIME = 'Tid at holde mellemrumsknappen inde(sekunder(s))';
-var PROPERTY_ENTERING = 'Put tid ind med';
-var PROPERTY_ENTERING_STR = 'timer|skrive|stackmat|MoYuTimer|virtuel|Giiker';
-var PROPERTY_COLOR = 'vælg farve tema';
-var PROPERTY_COLORS = 'font farve|baggrunds farve|bord farve|knappe farve|link farve| Logo farve| Logo baggrundsfarve';
-var PROPERTY_VIEW = 'UI stil er';
-var PROPERTY_VIEW_STR = 'Automatisk|Mobil|Skrivebord';
+var PROPERTY_IMGSIZE = 'Scramble Image Size';
+var TIMER_INSPECT = 'inspect';
+var TIMER_SOLVE = 'solve';
+var PROPERTY_USEMOUSE = 'use mouse timer';
+var PROPERTY_TIMEU = 'timer update is';
+var PROPERTY_TIMEU_STR = 'update|0.1s|seconds|inspection|none';
+var PROPERTY_PRETIME = 'time of keeping space down(second(s))';
+var PROPERTY_ENTERING = 'entering in times with';
+var PROPERTY_ENTERING_STR = 'timer|typing|stackmat|MoYuTimer|virtual|Giiker';
+var PROPERTY_COLOR = 'select color theme';
+var PROPERTY_COLORS = 'font color|background color|board color|button color|link color|Logo color|Logo bgcolor';
+var PROPERTY_VIEW = 'UI style is';
+var PROPERTY_VIEW_STR = 'Auto|Mobile|Desktop';
 var PROPERTY_UIDESIGN = 'UI design is';
 var PROPERTY_UIDESIGN_STR = 'Normal|Material design|Normal w/o shadows';
-var COLOR_EXPORT = 'Vær venlig og gem stringen for import';
-var COLOR_IMPORT = 'Vær venlig og input stringen exported';
-var COLOR_FAIL = 'Inkorrekt Date, Import fejlede';
-var PROPERTY_FONTCOLOR_STR = 'Sort|Hvid';
-var PROPERTY_COLOR_STR = 'manual|import/export...|Tilfældig|stil1|stil2|stil3|sort|hvid|stil6|solarized dark|solarized light';
-var PROPERTY_FONT = 'Vælg timerens font';
-var PROPERTY_FONT_STR = 'Tilfældig digital|normal|digital1|digital2|digital3|digital4|digital5';
-var PROPERTY_FORMAT = 'tids format';
-var PROPERTY_USEKSC = 'brug tastatur genvej';
-var PROPERTY_NTOOLS = 'nummer af værktøj';
-var PROPERTY_AHIDE = 'Gem alle elementer når du tager tid';
-var SCRAMBLE_LAST = 'sidste';
-var SCRAMBLE_NEXT = 'næste';
-var SCRAMBLE_SCRAMBLE = 'blanding';
-var SCRAMBLE_LENGTH = 'længde';
-var SCRAMBLE_INPUT = 'input blanding(er)';
+var COLOR_EXPORT = 'Please save the string for import';
+var COLOR_IMPORT = 'Please input the string exported';
+var COLOR_FAIL = 'Incorrect Data, Import Failed';
+var PROPERTY_FONTCOLOR_STR = 'black|white';
+var PROPERTY_COLOR_STR = 'manual|import/export...|random|style1|style2|style3|black|white|style6|solarized dark|solarized light';
+var PROPERTY_FONT = 'select timer\'s font';
+var PROPERTY_FONT_STR = 'random digital|normal|digital1|digital2|digital3|digital4|digital5';
+var PROPERTY_FORMAT = 'time format';
+var PROPERTY_USEKSC = 'use keyboard shortcut';
+var PROPERTY_NTOOLS = 'number of tools';
+var PROPERTY_AHIDE = 'Hide All Elements When Timing';
+var SCRAMBLE_LAST = 'last';
+var SCRAMBLE_NEXT = 'next';
+var SCRAMBLE_SCRAMBLE = ' scramble';
+var SCRAMBLE_LENGTH = 'length';
+var SCRAMBLE_INPUT = 'Input Scramble(s)';
 var PROPERTY_VRCSPEED = 'VRC base speed (tps)';
 var PROPERTY_VRCMP = 'multi-phase';
 var PROPERTY_VRCMPS = 'None|CFOP|CF+OP|CFFFFOP|Roux';
@@ -117,7 +117,7 @@ var scrdata = [
 		['7x7x7', "777wca", -100],
 		['3x3 bld', "333ni", 0],
 		['3x3 fm', "333fm", 0],
-		['3x3 eh', "333oh", 0],
+		['3x3 oh', "333oh", 0],
 		['3x3 ft', "333ft", 0],
 		['clock', "clkwca", 0],
 		['megaminx', "mgmp", -70],
@@ -136,7 +136,7 @@ var scrdata = [
 	]],
 	['3x3x3', [
 		["WCA", "333", 0],
-		['gammel stil', "333o", 25],
+		['old style', "333o", 25],
 		['3x3x3 for noobs', "333noob", 25],
 		['edges only', "edges", 0],
 		['corners only', "corners", 0],
@@ -159,7 +159,7 @@ var scrdata = [
 	]],
 	['2x2x2', [
 		["WCA", "222so", 0],
-		['optimal tilfældig stil', "222o", 0],
+		['optimal random state', "222o", 0],
 		['3-gen', "2223", 25],
 		['EG', "222eg", 0],
 		['EG0', "222eg0", 0],
@@ -202,7 +202,7 @@ var scrdata = [
 	]],
 	['Megaminx', [
 		["WCA", "mgmp", 70],
-		['Gulerod', "mgmc", 70],
+		['Carrot', "mgmc", 70],
 		['old style', "mgmo", 70]
 	]],
 	['Pyraminx', [
@@ -340,19 +340,19 @@ var scrdata = [
 	]]
 ];
 var SCRAMBLE_NOOBST = [
-	['vend top siden', ' vend bund siden'],
-	['vend højre side', 'vend venstre side'],
-	['vend front siden', 'vend bagsiden']
+	['turn the top face', 'turn the bottom face'],
+	['turn the right face', 'turn the left face'],
+	['turn the front face', 'turn the back face']
 ];
-var SCRAMBLE_NOOBSS = 'med uret af 90 grader,| mod uret af 90 grader,| af 180 degrees,';
-var STATS_CFM_RESET = 'Nulstil alle tider i denne session??';
+var SCRAMBLE_NOOBSS = ' clockwise by 90 degrees,| counterclockwise by 90 degrees,| by 180 degrees,';
+var STATS_CFM_RESET = 'reset all times in this session?';
 var STATS_CFM_DELSS = 'delete session [%s]?';
-var STATS_CFM_DELMUL = 'Antallet af slettede værdier fra nuværende indeks?';
-var STATS_CFM_DELETE = 'Slet denne tid?';
-var STATS_COMMENT = 'Kommenter';
+var STATS_CFM_DELMUL = 'The Number Of Deleted Values From Current Index?';
+var STATS_CFM_DELETE = 'delete this time?';
+var STATS_COMMENT = 'Comment';
 var STATS_DATE = 'Date';
-var STATS_CURROUND = 'Nuværrende runde statistikker';
-var STATS_CURSESSION = 'Nuværende session statistikker';
+var STATS_CURROUND = 'Current Round Statistics';
+var STATS_CURSESSION = 'Current Session Statistics';
 var STATS_CURSPLIT = 'Phase %d of Current Session Statistics';
 var STATS_EXPORTCSV = 'Export CSV';
 var STATS_SSMGR_TITLE = 'Session Manager';
@@ -364,55 +364,55 @@ var STATS_SSMGR_ODCFM = 'Sort all sessions by scramble?';
 var STATS_ALERTMG = 'Merge all times in session [%f] to the end of session [%t]?';
 var STATS_PROMPTSPL = 'Number of latest times split from session [%s]?';
 var STATS_ALERTSPL = 'Should split or leave 1 time at least';
-var STATS_AVG = 'Mean';
-var STATS_SOLVE = 'Løs';
-var STATS_TIME = 'Tid';
+var STATS_AVG = 'mean';
+var STATS_SOLVE = 'solve';
+var STATS_TIME = 'time';
 var STATS_SESSION = 'Session';
 var STATS_SESSION_NAME = 'Edit session name';
 var STATS_SESSION_NAMEC = 'Name of the new session';
-var STATS_STRING = 'bedste|nuværrende|værste|Genereret af csTimer på %Y-%M-%D|løsninger/total: %d|single|mean af %mk| gns af %mk|Gennemsnit: %v{ (s = %sgm)}|Mean: %v|Tid Liste:|solving from %s to %e|Totally spent: %d';
-var STATS_PREC = 'tidsfordeling præcision';
+var STATS_STRING = 'best|current|worst|Generated By csTimer on %Y-%M-%D|solves/total: %d|single|mean of %mk|avg of %mk|Average: %v{ (σ = %sgm)}|Mean: %v|Time List:|solving from %s to %e|Totally spent: %d';
+var STATS_PREC = 'time distribution precision';
 var STATS_PREC_STR = 'auto|0.1s|0.2s|0.5s|1s|2s|5s|10s|20s|50s|100s';
-var STATS_TYPELEN = 'liste %d type|liste %d længde|gennemsnit|mean';
+var STATS_TYPELEN = 'list %d type|list %d length|average|mean';
 var STATS_STATCLR = 'Enable session emptying';
 var STATS_ABSIDX = 'Show absolute index in statistics report';
 var STATS_XSESSION_DATE = 'any date|past 24 hours|past 7 days|past 30 days|past 365 days';
 var STATS_XSESSION_NAME = 'any name';
 var STATS_XSESSION_SCR = 'any scramble';
 var STATS_XSESSION_CALC = 'Calc';
-var PROPERTY_PRINTSCR = 'print blanding(erne) i statistikker';
+var PROPERTY_PRINTSCR = 'print scramble(s) in statistics';
 var PROPERTY_PRINTDATE = 'print solving date in statistics';
-var PROPERTY_SUMMARY = 'vis sammendrag inden tidslisten';
-var PROPERTY_IMRENAME = 'omdøb session umiddelbart efter oprettelsen';
-var PROPERTY_SCR2SS = 'Opret ny session, når du skifter blandings type';
-var PROPERTY_SS2SCR = 'Gendan blandingstype, når du skifter session';
+var PROPERTY_SUMMARY = 'show summary before time list';
+var PROPERTY_IMRENAME = 'rename session immediately after creation';
+var PROPERTY_SCR2SS = 'create new session when switching scramble type';
+var PROPERTY_SS2SCR = 'restore scramble type when switching session';
 var PROPERTY_SS2PHASES = 'restore multi-phase timing when switching session';
 var PROPERTY_STATINV = 'Inverse time list';
-var PROPERTY_STATAL = 'Statistiske indikatorer';
+var PROPERTY_STATAL = 'Statistical indicators';
 var PROPERTY_STATALU = 'Customized statistical indicator';
-var PROPERTY_DELMUL = 'Tillad flere sletninger';
+var PROPERTY_DELMUL = 'Enable Multiple Deletion';
 var PROPERTY_TOOLSFUNC = 'Selected Functions';
 var PROPERTY_TRIM = 'Number of solves trimmed at each side';
 var PROPERTY_TRIM_MED = 'Median';
 var PROPERTY_STKHEAD = 'Use Stackmat Status Information';
 var MODULE_NAMES = {
 	"kernel": 'global',
-	"ui": 'skærm',
-	"color": 'farve',
+	"ui": 'display',
+	"color": 'color',
 	"timer": 'timer',
-	"scramble": 'blanding',
-	"stats": 'statistik',
-	"tools": 'værktøj',
+	"scramble": 'scramble',
+	"stats": 'statistics',
+	"tools": 'tools',
 	"vrc": 'virtual&<br>Giiker'
 };
-var BGIMAGE_URL = 'Vør venlig og sæt billedets url';
-var BGIMAGE_INVALID = 'ugyldig url';
-var BGIMAGE_OPACITY = 'baggrunds billede gennemsigtigheds';
-var BGIMAGE_IMAGE = 'baggrunds billede';
-var BGIMAGE_IMAGE_STR = 'ingen|manual|CCT';
-var SHOW_AVG_LABEL = 'Vis Gns Etiket';
+var BGIMAGE_URL = 'please input image\'s url';
+var BGIMAGE_INVALID = 'invalid url';
+var BGIMAGE_OPACITY = 'background image opacity';
+var BGIMAGE_IMAGE = 'background image';
+var BGIMAGE_IMAGE_STR = 'none|manual|CCT';
+var SHOW_AVG_LABEL = 'Show Avg Label';
 var USE_LOGOHINT = 'Hint messages in logo';
-var TOOLS_SCRGEN = 'BlandingsGenerator';
-var SCRGEN_NSCR = 'Nummere af blandinger';
-var SCRGEN_PRE = 'præfiks';
-var SCRGEN_GEN = 'Frembringe Blandinger!';
+var TOOLS_SCRGEN = 'ScrambleGenerator';
+var SCRGEN_NSCR = 'Number of scrambles';
+var SCRGEN_PRE = 'prefix';
+var SCRGEN_GEN = 'Generate Scrambles!';

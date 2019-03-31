@@ -177,10 +177,11 @@ var tools = execMain(function() {
 			}
 		}
 
+		kernel.regProp('tools', 'solSpl', 0, 'Hide full solution', [false])
 		kernel.regProp('tools', 'imgSize', 2, PROPERTY_IMGSIZE, [15, 5, 50]);
 		kernel.regProp('tools', 'NTools', 2, PROPERTY_NTOOLS, [1, 1, 4]);
 		var defaultFunc = JSON.stringify(['image', 'stats', 'cross', 'distribution']);
-		kernel.regProp('tools', 'toolsfunc', 5, 'Selected Functions', [defaultFunc], 1);
+		kernel.regProp('tools', 'toolsfunc', 5, PROPERTY_TOOLSFUNC, [defaultFunc], 1);
 		var funcStr = kernel.getProp('toolsfunc', defaultFunc);
 		if (funcStr.indexOf('[') == -1) {
 			funcStr = defaultFunc.replace('image', funcStr);
@@ -216,11 +217,42 @@ var tools = execMain(function() {
 		}
 	}
 
+	function getSolutionSpan(solution) {
+		var span = $('<span />');
+		for (var i = 0; i < solution.length; i++) {
+			span.append('<span style="display:none;">&nbsp;' + solution[i] + '</span>');
+		}
+		if (kernel.getProp('solSpl')) {
+			span.append($('<span class="click" data="n">[+1]</span>').click(procSolutionClick));
+			span.append($('<span class="click" data="a">[' + solution.length + 'f]</span>').click(procSolutionClick));
+		} else {
+			span.children().show();
+		}
+		return span;
+	}
+
+	function procSolutionClick(e) {
+		var span = $(this);
+		if (span.attr('data') == 'a') {
+			span.prevAll().show();
+			span.prev().hide();
+			span.hide();
+		} else if (span.attr('data') == 'n') {
+			var unshown = span.prevAll(':hidden');
+			unshown.last().show();
+			if (unshown.length == 1) {
+				span.next().hide();
+				span.hide();
+			}
+		}
+	}
+
 	return {
 		regTool: regTool,
 		getCurScramble: function() {
 			return curScramble;
 		},
+		getSolutionSpan: getSolutionSpan,
 		scrambleType: scrambleType,
 		puzzleType: puzzleType
 	}
